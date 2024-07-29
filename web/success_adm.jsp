@@ -9,84 +9,59 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <title>Fixed Left Rectangle with Links</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <script>
-        function management(){
-            location.href = "success_adm.jsp";
-        }
-    </script>
-    <style>
-        .container {
-        height: 100vh; /* 设置容器高度为整个视口高度 */
-        display: flex;
-        flex-direction: column;
-        }
+    <head>
+        <meta charset="UTF-8">
+        <title>Fixed Left Rectangle with Links</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+        <script>
+            function management(){
+                location.href = "success_adm.jsp";
+            }
+        </script>
+        <style>
+            .bottom-section {
+            flex: 1; /* 下80%的高度，占据剩余空间 */
+            overflow-y: auto; /* 纵向滚动 */
+            padding: 10px; /* 内边距 */
+            }
 
-        .top-section {
-        height: 20%; /* 上20%的高度 */
-        display: flex;
-        align-items: center;
-        padding: 10px; /* 内边距 */
-        }
+            table {
+            width: 100%;
+            border-collapse: collapse;
+            }
 
-        .search-box {
-        width: 50%;
-        }
+            th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+            }
 
-        .buttons {
-        width: 10%;
-        }
-
-        .bottom-section {
-        flex: 1; /* 下80%的高度，占据剩余空间 */
-        overflow-y: auto; /* 纵向滚动 */
-        padding: 10px; /* 内边距 */
-        }
-
-        table {
-        width: 100%;
-        border-collapse: collapse;
-        }
-
-        th, td {
-        border: 1px solid #ccc;
-        padding: 8px;
-        text-align: left;
-        }
-
-        th {
-        background-color: #f2f2f2;
-        }
-    </style>
-</head>
-<body class="success_adm_alter_body">
-    <div class="success_adm_alter_sidebar">
-        <div class="success_adm_alter_div">
-            <div class="success_adm_alter_div">菜 单</div>
+            th {
+            background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body class="success_adm_alter_body">
+        <div class="success_adm_alter_sidebar">
+            <div class="success_adm_alter_div">
+                <div class="success_adm_alter_input">
+                    菜 单
+                </div>
+                <input type="button" class="success_adm_alter_input" value="Link">
+                <input type="button" class="success_adm_alter_input" value="Link">
+            </div>
         </div>
-        <div class="success_adm_alter_div">
-            <input type="button" class="success_adm_alter_input" value="Link">
-        </div>
-        <div class="success_adm_alter_div">
-            <input type="button" class="success_adm_alter_input" value="Link">
-        </div>
-    </div>
-        <div style="margin-left: 200px; padding: 20px;">
-            <div class="container">
-                <div class="top-section">
-                    <div class="search-box" style="width: 100%;">
+        <div class="success_adm_whole_div_out">
+            <div class="success_adm_whole_div">
+                <div class="success_adm_top_bar">
+                    <div class="success_adm_top_search">
                         <label>
-                            <input type="text" placeholder="搜索...">
+                            <input type="text" placeholder="搜索..." class="success_adm_top_input">
+                            <button type="submit" class="success_adm_top_check_button">查询</button>
+                            <button type="submit" class="success_adm_top_check_button">封禁</button>
                         </label>
                     </div>
-                    <div class="buttons" style="width: 10%;">
-                        <!-- 横向占比10%的两个按钮 -->
-                        <button>按钮1</button>
-                        <button>按钮2</button>
-                    </div>
+
                 </div>
                 <div class="bottom-section">
                     <!-- 下80%的显示信息表格 -->
