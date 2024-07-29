@@ -13,7 +13,6 @@
     <meta charset="UTF-8">
     <title>Fixed Left Rectangle with Links</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/content.css" />
     <script>
         function management(){
             location.href = "success_adm.jsp";
