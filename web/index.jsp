@@ -54,21 +54,27 @@
       <div class="inputText" style="color: white; font-size:20px">
         <i class="fa fa-user-circle" style="color: whitesmoke;"></i>
         账户：
-        <input type="text" placeholder="用户名" id="username" name="username"/>
+        <label>
+          <input type="text" placeholder="用户名" id="username" name="username"/>
+        </label>
       </div>
       <div class="inputText" style="color: white; font-size:20px">
         <i class="fa fa-key" style="color: whitesmoke;"></i>
         密码：
-        <input type="password" placeholder="密码" id="password" name="password"/>
+        <label>
+          <input type="password" placeholder="密码" id="password" name="password"/>
+        </label>
       </div>
       <div class="inputText" style="color: white; font-size:20px">
         <i class="fa fa-cogs" style="color: whitesmoke;"></i>
         身份：
-        <select id="sdcard" name="sdcard">
-          <option value="ordinary" selected="selected">普通用户</option>
-          <option value="enterprise">企业用户</option>
-          <option value="administrator">管理用户</option>
-        </select>
+        <label>
+          <select id="sdcard" name="sdcard">
+            <option value="ordinary" selected="selected">普通用户</option>
+            <option value="enterprise">企业用户</option>
+            <option value="administrator">管理用户</option>
+          </select>
+        </label>
       </div>
       <input type="submit" class="inputButton" value="登录" />
       <input type="button" class="inputButton" onclick="href()" value="注册" />

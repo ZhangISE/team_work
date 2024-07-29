@@ -79,8 +79,9 @@
     <div class="container">
         <div class="top-section">
             <div class="search-box" style="width: 100%;">
-                <!-- 横向占比50%的搜索框 -->
-                <input type="text" placeholder="搜索...">
+                <label>
+                    <input type="text" placeholder="搜索...">
+                </label>
             </div>
             <div class="buttons" style="width: 10%;">
                 <!-- 横向占比10%的两个按钮 -->
