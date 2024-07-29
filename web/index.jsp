@@ -46,7 +46,7 @@
     }
   </script>
 </head>
-<body>
+<body class="index_body">
 <div id="bigBox">
   <h1>登录</h1>
   <div class="inputBox">

@@ -63,56 +63,55 @@
         }
     </style>
 </head>
-<body>
-<div class="success_adm_alter_sidebar">
-    <div class="success_adm_alter_div">
-        <div class="success_adm_alter_div">菜 单</div>
-    </div>
-    <div class="success_adm_alter_div">
-        <input type="button" class="success_adm_alter_input" value="Link">
-    </div>
-    <div class="success_adm_alter_div">
-        <input type="button" class="success_adm_alter_input" value="Link">
-    </div>
-</div>
-<div style="margin-left: 200px; padding: 20px;">
-    <div class="container">
-        <div class="top-section">
-            <div class="search-box" style="width: 100%;">
-                <label>
-                    <input type="text" placeholder="搜索...">
-                </label>
-            </div>
-            <div class="buttons" style="width: 10%;">
-                <!-- 横向占比10%的两个按钮 -->
-                <button>按钮1</button>
-                <button>按钮2</button>
-            </div>
+<body class="success_adm_alter_body">
+    <div class="success_adm_alter_sidebar">
+        <div class="success_adm_alter_div">
+            <div class="success_adm_alter_div">菜 单</div>
         </div>
-        <div class="bottom-section">
-            <!-- 下80%的显示信息表格 -->
-            <table>
-                <thead>
-                <tr>
-                    <th>列1</th>
-                    <th>列2</th>
-                    <th>列3</th>
-                    <!-- 表头 -->
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>数据1</td>
-                    <td>数据2</td>
-                    <td>数据3</td>
-                    <!-- 表格内容 -->
-                </tr>
-                <!-- 更多行 -->
-                </tbody>
-            </table>
+        <div class="success_adm_alter_div">
+            <input type="button" class="success_adm_alter_input" value="Link">
+        </div>
+        <div class="success_adm_alter_div">
+            <input type="button" class="success_adm_alter_input" value="Link">
         </div>
     </div>
-
-</div>
-</body>
+        <div style="margin-left: 200px; padding: 20px;">
+            <div class="container">
+                <div class="top-section">
+                    <div class="search-box" style="width: 100%;">
+                        <label>
+                            <input type="text" placeholder="搜索...">
+                        </label>
+                    </div>
+                    <div class="buttons" style="width: 10%;">
+                        <!-- 横向占比10%的两个按钮 -->
+                        <button>按钮1</button>
+                        <button>按钮2</button>
+                    </div>
+                </div>
+                <div class="bottom-section">
+                    <!-- 下80%的显示信息表格 -->
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>列1</th>
+                            <th>列2</th>
+                            <th>列3</th>
+                            <!-- 表头 -->
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>数据1</td>
+                            <td>数据2</td>
+                            <td>数据3</td>
+                            <!-- 表格内容 -->
+                        </tr>
+                        <!-- 更多行 -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
